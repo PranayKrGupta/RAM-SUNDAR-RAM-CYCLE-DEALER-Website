@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+    <form method="post" action="#">
+        <table>
+            <tr><th colspan="2">
+                <h1>Sign Up</h1>
+            </th></tr>
+            <tr>
+                <td>
+                    Username <span>:</span> 
+                </td>
+                <td>
+                    <input type="text" name="username" placeholder="Enter username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Create a Password <span>:</span> 
+                </td>
+                <td>
+                    <input type="password" name="password" placeholder="Enter Password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Confirm Password <span>:</span> 
+                </td>
+                <td>
+                    <input type="password" name="con-password" placeholder="Confirm Password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  Phone Number <span>:</span> 
+                </td>
+                <td>
+                    <input type="text" name="phone-number" placeholder="Enter Phone No.">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Select Gender <span>:</span> 
+                </td>
+                <td>
+                    <select name="gender" >
+                        <option>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Your Age <span>:</span>
+                </td>
+                <td>
+                    <input type="text" name="age" placeholder="Enter Your Age">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Create Account</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="sign-up.js"></script>
+</body>
+</html>

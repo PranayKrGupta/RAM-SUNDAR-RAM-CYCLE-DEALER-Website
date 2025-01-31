@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("login-bg/cycle\ with\ dark_black\ background.png");
+    background-color: rgba(0, 0, 0, 0.693);
+    background-blend-mode: darken;
+    background-size:cover;
+    background-position: 0px -200px;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    font-size: 1.37em;
+}
+table{
+    height: 90vh;
+    width:28vw;
+    border-radius:15px;
+    background:rgba(205, 220, 226, 0.125);
+    color:  aliceblue;
+    backdrop-filter: blur(10px);
+    animation: pop 0.85s ease-in-out 0s 1 normal;
+}
+td{
+    font-size: 0.84em;
+    text-align: center;
+
+}
+tr:hover{
+    text-shadow: 0px 0px 9px rgb(50, 185, 32);
+}
+h1{
+    text-shadow: 0px 0px 5px rgb(50, 185, 32);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    animation: glow 2s linear infinite alternate-reverse ;
+}
+/* h1:hover{
+    text-shadow: 0px 0px 15px rgb(50, 185, 32);
+    
+} */
+input{
+    height: 2rem;
+    width:90%;
+    margin-right: 5px;
+    border-radius: 7px;
+    border : 1px solid transparent;
+    text-decoration: none;
+}
+
+select{
+    height: 1.7rem;
+    border-radius: 7px;
+    border : 1px solid transparent;
+}
+
+
+button[type="reset"]{
+    background-color: white;
+    box-shadow: 0px 0px 3px black;
+    padding: 3px 10px 3px 10px;
+    font-size: 1.13rem;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+button[type="submit"]{
+    background-color: rgb(65, 162, 248);
+    color: aliceblue;
+    box-shadow: 0px 0px 3px black;
+    padding: 5px 35px 5px 35px;
+    font-size: large;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+button:hover{
+    box-shadow: 0px 0px 10px rgb(48, 181, 193);
+}
+span{
+    margin-left: 5px;
+}
+@keyframes pop{
+    0%{opacity: 0;transform: scale(0);}
+    70%{opacity: 1;;transform: scale(1.1);}
+    100%{opacity: 1;;transform: scale(1);}
+}
+@keyframes glow{
+    0%{text-shadow: 0px 0px 20px red;}
+    50%{text-shadow: 0px 0px 20px blue;}
+    100%{text-shadow: 0px 0px 20px green;}
+}

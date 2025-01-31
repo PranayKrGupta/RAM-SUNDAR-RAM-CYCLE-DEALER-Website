@@ -1,0 +1,185 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: #000;
+}
+nav{
+    position: fixed;
+    top:0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(44, 45, 44);
+    height:30px;
+    width: 100vw; 
+    align-items: center;  
+    z-index: 2; 
+}
+.logo{
+    height:1.5rem;
+    position: relative;
+    right:50px;
+    top: 3px;
+}
+.tx{
+    font-size: 1rem;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    word-spacing: -7px;
+    font-weight: 700;
+    transition: text-shadow 0.3s ease-out;
+    transition: transform 0.2s ease-out;
+}
+.tx:hover{
+    text-shadow: 0 0 0.8rem rgb(240, 133, 240) ;
+    transform: scale(1.05);
+}
+nav a:visited{
+    color: bisque;
+}
+.hero-section{
+    margin-top: 30px;
+    height:450px;
+    background: url('hero.jpeg');
+    background-size:cover ;
+    background-position: center;
+    animation: frombottom 1.2s ease-out 0.2s 1 normal ;  
+}
+.hero-slogan{
+    /* background: linear-gradient(90deg,black,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),linear-gradient(360deg,black,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)); */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height:100%;
+    width: 100%;
+    box-shadow: inset 0px -100px 80px #000;
+    animation: shadow-effect 2s ease-out infinite 1 normal;
+}
+.hero-slogan>img{
+    width:400px;
+    margin-bottom: 50px;
+    animation: pop 0.8s ease-in-out 0s 1 normal;
+}
+.ch-bk{
+    height:300px;
+    background: url('Choose By Wheel Size 2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white; */
+    background-clip: padding-box;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    box-shadow: inset 0px 20px 10px #000;
+}
+.Wsize{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap :wrap;
+    /* border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white; */
+    /* background-color: rgba(0, 255, 255, 0.168); */
+}
+.ch-bk img{
+    height: 60px;
+    transform: translateX(-3.4rem);
+}
+.size{
+    color:bisque; 
+    text-align:center;
+    font-family: cursive;
+    padding-left: 0px;
+    width:100%;
+    padding-top : 80px;
+    padding-bottom : 40px;
+    font-size: 3rem;
+}
+.items{
+    width:250px;
+    /* height: 319px; */
+    padding-bottom: 30px;
+    transition: transform 0.2s ease-out;
+}
+.items:hover{
+    transform: scale(1.04);
+}
+.items>img{
+    width:250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.info{
+    background-color: bisque;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.detail{
+    text-align: center;
+    font-family: cursive;
+    color: chocolate;
+}
+.info button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid burlywood;
+    border-radius:8px;
+    position: relative;
+    right: 1.5rem;
+    transition: transform 0.1s ease-out;
+}
+.info button:hover{
+    transform: scale(1.06);
+    box-shadow: 2px 2px 2px black;
+}
+
+.info button:last-child{
+    background-color: rgb(240, 117, 30);
+    color: rgb(138, 214, 139);
+}
+
+/* .info button:last-child{
+    background-color: aqua;
+} */
+.dis{
+    font-size: 1.4rem;
+    /* margin-right:2px ; */
+    position: relative;
+    left: 0.4rem;
+    display: inline;
+}
+.mrp{
+    text-decoration: line-through;
+    margin-left: 6px;
+    position: relative;
+    top: 0.49rem;
+    left: 0.4rem;
+    display: inline;
+}
+.per{
+    display: inline;
+    position: relative;
+    right: 2.4rem;
+    bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: rgb(12, 193, 72);
+    /* text-shadow: 0.4px 0.4px 2px green; */
+}
+.empty{
+    height: 8vh;
+    color: aliceblue;
+}
+@keyframes frombottom{
+    from{opacity: 0;background-position-y: bottom;}
+    to{opacity: 1;background-position-y: center;}
+}
+@keyframes pop{
+    0%{opacity: 0;transform: scale(0);transform: translateY(6rem);}
+    70%{opacity: 0.7;;transform: scale(1.06);transform:translateY(initial);}
+    100%{opacity: 1;;transform: scale(1);}
+}

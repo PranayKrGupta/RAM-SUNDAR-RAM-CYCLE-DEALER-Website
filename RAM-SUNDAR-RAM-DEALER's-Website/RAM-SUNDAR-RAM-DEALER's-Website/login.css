@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url('login-bg/th.jpg');
+    background-blend-mode: darken;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    font-size: 1.3em;
+    color: white;
+    animation: bg_shift 4s linear infinite alternate-reverse ;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 60vh;
+    width:21vw;
+    background-color: rgba(255, 255, 255, 0.31);
+    backdrop-filter: blur(10px);
+    border-radius: 3.8%;
+    animation: pop 0.8s ease-in-out 0s 1 normal;
+}
+form>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%
+}
+form>p,form>p>a{
+    font-size: 0.88em;
+    margin: 4px;
+}
+form>p>a{
+    color: blue;
+    font-weight: bolder;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.72);
+    font-size:1em ;
+}
+form>p>a:active{
+    color: darkblue
+}
+h2{
+    /* line-height: 10%; */
+    animation: glow 2s linear infinite alternate-reverse ;
+}
+input{
+    width: 70%;
+    height: 1.4rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+button{
+    padding: 5px 30px 5px 30px;
+    font-size: 0.9001em;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: blue;
+    color: white;
+    transition: background-color 0.17s ease-in 0s;
+}
+button:hover{
+    background-color: darkblue;
+}
+.bg{
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.447);
+    height: 100vh;
+    width: 100%;
+    /* border: 10px solid pink; */
+}
+
+@keyframes pop{
+    0%{opacity: 0;transform: scale(0);}
+    70%{opacity: 1;;transform: scale(1.1);}
+    100%{opacity: 1;;transform: scale(1);}
+}
+@keyframes glow{
+    0%{text-shadow: 0px 0px 20px red;}
+    50%{text-shadow: 0px 0px 20px blue;}
+    100%{text-shadow: 0px 0px 20px green;}
+}
+@keyframes bg_shift{
+    0%{background-color: rgba(197, 17, 17, 0.239) ;}
+    33.3%{background-color: rgba(191, 165, 51, 0.293);}
+    66.6%{background-color: rgba(35, 49, 203, 0.288);}
+    100%{background-color: rgba(85, 170, 66, 0.294);}
+}

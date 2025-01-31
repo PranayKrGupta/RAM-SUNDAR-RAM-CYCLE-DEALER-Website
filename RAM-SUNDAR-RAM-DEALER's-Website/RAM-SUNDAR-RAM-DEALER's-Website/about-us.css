@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    background-color: black; 
+}
+.hero{
+    display: flex;
+    height: 90vh;
+    background: url('about\ us\ Page/th.jpeg'),linear-gradient(180deg,black,rgba(0,0,0,0),rgba(0, 0, 0, 0.652) ,black);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-blend-mode: darken;
+    justify-content: center;
+    align-items: top;
+    animation: pop 1s ease-in-out 1 normal;
+    transform: translateY(1rem);
+}
+.hero img{
+    width: 30vw;
+    height: 20vh;
+    transform: translateY(3rem);
+    filter: contrast(1.3);
+}
+.dtxt{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    transform: translateY(-9rem);
+    animation: fromtop 1.2s ease-in-out 0s 1 normal;
+}
+.txt{
+    width:80%;
+    color: white;
+    text-align: center;
+}
+pre{
+    font-family: cursive;
+    letter-spacing: 2px;
+}
+nav{
+    position: fixed;
+    top:0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(44, 45, 44);
+    height:30px;
+    width: 100vw; 
+    align-items: center;  
+    z-index: 2; 
+}
+.logo{
+    height:1.5rem;
+    position: relative;
+    right:50px;
+    top: 3px;
+}
+.tx{
+    font-size: 1rem;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    word-spacing: -7px;
+    font-weight: 700;
+    transition: text-shadow 0.3s ease-out;
+    transition: transform 0.2s ease-out;
+}
+.tx:hover{
+    text-shadow: 0 0 0.8rem rgb(240, 133, 240) ;
+    transform: scale(1.05);
+}
+nav a:visited{
+    color: bisque;
+}
+p{
+    color: skyblue;
+    text-shadow: 0 0 10px aqua;
+    font-size: xx-large;
+}
+@keyframes pop{
+    0%{transform: scale(0.3);opacity: 0;}
+    50%{transform: scale(1.0.4);opacity: 1;}
+    100%{transform: scale(1);opacity: 1;}
+}
+@keyframes fromtop{
+    from{opacity: 0; transform: translateY(-6rem);}
+    to{opacity: 1;transform: translateY(initial);}
+}
